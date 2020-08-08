@@ -1,0 +1,97 @@
+.tmpenvo-admin-column h1 {
+    padding: 15px;
+    color: #ffffff;
+    border-left: 15px solid;
+    border-top: 1px solid;
+    background: #23282d;
+    font-weight: 500;
+    border-color: #0073aa;
+}
+
+.tmpenvo-admin-template-selector h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 14px;
+}
+
+
+.tmpenvo-repeater-item {
+	padding: 30px 15px;
+    margin: 10px 0px;
+    background: #0073aa;
+    border: 1px solid #46cef3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0px 20px;
+    grid-template-areas: "tmpenvo-grid-area1 tmpenvo-grid-area2 tmpenvo-grid-area3";
+}
+
+.tmpenvo-outerlist {
+    width: 100%;
+}
+
+.tmpenvo_repeater .select.is-success select {
+    border-color: #b9b9b9!important;
+    background: #f1f1f1!important;
+    border-radius: 2px!important;
+    box-shadow: 0 0 12px -7px gray;
+    font-size: 13px;
+}
+
+.tmpenvo-grid-area1 {
+    grid-area: tmpenvo-grid-area1;
+}
+
+.tmpenvo-grid-area2 {
+    grid-area: tmpenvo-grid-area2;
+}
+
+.tmpenvo-grid-area3 {
+    grid-area: tmpenvo-grid-area3;
+    height: 76%
+}
+
+.tmpenvo_repeater .select, .tmpenvo_repeater .select select {
+    width: 100%
+}
+
+.tmpenvo-content-helper, .tmpenvo-notices {
+    background: #cdf300;
+    padding: 15px;
+    color: #000;
+    font-size: 13px;
+    margin: 8px;
+    border-left: 5px solid;
+}
+
+.toplevel_page_tmpenvo_add_menu_page #wpbody-content {
+  padding: 15px;
+  background: #f1f1f1;
+}
+
+.toplevel_page_tmpenvo_add_menu_page .button.is-dark:focus{
+	background: black !important;
+	color: white !important;
+}
+.tmpenvo-admin-template-selector {
+    padding: 30px;
+    background: #f7fbf5;
+    box-shadow: 0 0 22px 4px #d2d2d2;
+}
+
+@keyframes Gradient {
+	0%,
+	100% {
+		background-position: 0 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+}
+
+a.toplevel_page_tmpenvo_add_menu_page{
+  background: linear-gradient(-45deg, #212529, #72777c, #23282d, #343a40)!important;
+	animation: Gradient 15s ease infinite;
+	background-size: 400% 400%!important;
+	color: #fff!important;
+}

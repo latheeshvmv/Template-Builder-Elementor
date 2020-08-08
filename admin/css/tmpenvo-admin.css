@@ -1,0 +1,77 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.tmpenvo-admin-column h1 {
+    margin-top: 15px;
+    padding: 15px;
+    color: #00d1b2;
+    border-left: 15px solid;
+    background: #23282d;
+    font-weight: 700;
+}
+.tmpenvo-admin-template-selector {
+    padding: 15px;
+    color: #272727;
+    background: #f1f1f1;
+    border: 1px solid white;
+    border-left: 10px solid #00d1b2;
+    box-shadow: 0 0 15px 15px #dedede;
+}
+.tmpenvo-admin-template-selector h2 {
+    color: #455600;
+    font-size: 26px;
+    font-weight: 300;
+}
+.tmpenvo-admin-template-selector .form-table th {
+    color: #007339;
+}
+.tmpenvo-repeater-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr;
+    grid-gap: 13px;
+    grid-template-areas: "tmpenvo-grid-area1 tmpenvo-grid-area2 tmpenvo-grid-area3"
+}
+.tmpenvo-outerlist {
+    width: 80%;
+}
+.tmpenvo_repeater .select.is-success select {
+    border-color: #b9b9b9 !important;
+    background: #f1f1f1 !important;
+    border-radius: 2px !important;
+    box-shadow: 0 0 12px -7px grey;
+    font-size: 13px;
+}
+.tmpenvo-grid-area1 {
+    grid-area: tmpenvo-grid-area1;
+}
+.tmpenvo-grid-area2 {
+    grid-area: tmpenvo-grid-area2;
+}
+.tmpenvo-grid-area3 {
+    grid-area: tmpenvo-grid-area3;
+    height: 76%;
+}
+.tmpenvo_repeater .select {
+    width: 100%;
+}
+.tmpenvo_repeater .select select {
+    width: 100%;
+}
+.tmpenvo-notices {
+    background: #cdf300;
+    padding: 15px;
+    color: black;
+    font-size: 13px;
+    margin: 8px;
+    border-left: 5px solid;
+}
+.tmpenvo-content-helper {
+    background: #cdf300;
+    padding: 15px;
+    color: black;
+    font-size: 13px;
+    margin: 8px;
+    border-left: 5px solid;
+}
