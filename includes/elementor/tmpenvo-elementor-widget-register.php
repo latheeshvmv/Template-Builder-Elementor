@@ -453,7 +453,7 @@ final class TMPENVO_Elementor_Ggowl_Extension
         $tmpenvo_message = sprintf(
             /* translators: 1: Plugin name 2: PHP 3: Required PHP version */
             esc_html__('"%1$s" requires "%2$s" version %3$s or greater.', 'tmpenvo'),
-            '<strong>' . esc_html__('Elementor Post Grid by Geeky Green Owl', 'pggo') . '</strong>',
+            '<strong>' . esc_html__('Elementor Post Grid by Geeky Green Owl', 'tmpenvo') . '</strong>',
             '<strong>' . esc_html__('PHP', 'tmpenvo') . '</strong>',
             self::tmpenvo_MINIMUM_PHP_VERSION
         );

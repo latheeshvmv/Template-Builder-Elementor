@@ -642,7 +642,7 @@ class Ggowl_Elementor_product_reviewform extends \Elementor\Widget_Base
         );
 
         $this->add_control(
-            'pggo_pagination_margin',
+            'tmpenvo_pagination_margin',
             [
                 'label'      => esc_html__('Pagination Block Margin', 'tmpenvo'),
                 'type'       => \Elementor\Controls_Manager::DIMENSIONS,
