@@ -46,10 +46,6 @@ class Ggowl_Admin
         add_submenu_page($parent_slug = 'tmpenvo_add_menu_page', $page_title = 'Archive Templates', $menu_title = 'Archive Templates', $capability = 'manage_options', 'edit.php?post_type=tmpenvo_templ_arch');
     }
 
-    public function tmpenvo_prebuild_templates_callback(){
-      require ABSPATH .'wp-content/plugins/tmpenvo/admin/dashboard/tmpenvo-dashboard.php';
-    }
-
     public function tmpenvo_add_menu_callback()
     {
         ?>
@@ -62,7 +58,7 @@ class Ggowl_Admin
             </div>
         </div>
         <?php
-}
+    }
 
     public function tmpenvo_main_menu_callback()
     {
@@ -75,7 +71,13 @@ class Ggowl_Admin
         <div class="tmpenvo-admin-template-selector">
             <form class="tmpenvo_repeater" method="post" action="options.php"><?php
               settings_errors();
-                $active_tab = isset( $_GET[ 'tab' ] ) ? $_GET[ 'tab' ] : 'front_page_options';
+              $tmpenvo_tab = filter_input(
+                    INPUT_GET,
+                    'tab',
+                    FILTER_CALLBACK,
+                    ['options' => 'esc_html']
+                );
+                $active_tab = $tmpenvo_tab ?: 'front_page_options';
         ?>
 
         <h2 class="nav-tab-wrapper">

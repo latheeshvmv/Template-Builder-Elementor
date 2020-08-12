@@ -390,15 +390,21 @@ final class TMPENVO_Elementor_Ggowl_Extension
      */
     public function tmpenvo_admin_notice_missing_main_plugin()
     {
+      $tmpenvo_admin_notice_missing_main_plugin_get = filter_input(
+          INPUT_GET,
+          'activate',
+          FILTER_CALLBACK,
+          ['options' => 'esc_html']
+      );
 
-        if (isset($_GET['activate'])) {
-            unset($_GET['activate']);
+        if ( isset( $tmpenvo_admin_notice_missing_main_plugin_get ) ) {
+            unset( $tmpenvo_admin_notice_missing_main_plugin_get );
         }
 
         $tmpenvo_message = sprintf(
             /* translators: 1: Plugin name 2: Elementor */
             esc_html__('"%1$s" requires "%2$s" to be installed and activated.', 'tmpenvo'),
-            '<strong>' . esc_html__('Elementor Post Grid By Greeky Green Owl', 'tmpenvo') . '</strong>',
+            '<strong>' . esc_html__('Template Builder Elementor', 'tmpenvo') . '</strong>',
             '<strong>' . esc_html__('Elementor', 'tmpenvo') . '</strong>'
         );
 
@@ -417,15 +423,23 @@ final class TMPENVO_Elementor_Ggowl_Extension
      */
     public function tmpenvo_admin_notice_minimum_elementor_version()
     {
+      $tmpenvo_admin_notice_missing_main_plugin_get = filter_input(
+          INPUT_GET,
+          'activate',
+          FILTER_CALLBACK,
+          ['options' => 'esc_html']
+      );
 
-        if (isset($_GET['activate'])) {
-            unset($_GET['activate']);
+        if ( isset( $tmpenvo_admin_notice_missing_main_plugin_get ) ) {
+            unset( $tmpenvo_admin_notice_missing_main_plugin_get );
         }
+
+
 
         $tmpenvo_message = sprintf(
             /* translators: 1: Plugin name 2: Elementor 3: Required Elementor version */
             esc_html__('"%1$s" requires "%2$s" version %3$s or greater.', 'tmpenvo'),
-            '<strong>' . esc_html__('Elementor Post Grid by Geeky Green Owl', 'tmpenvo') . '</strong>',
+            '<strong>' . esc_html__('Template Builder Elementor', 'tmpenvo') . '</strong>',
             '<strong>' . esc_html__('Elementor', 'tmpenvo') . '</strong>',
             self::tmpenvo_MINIMUM_ELEMENTOR_VERSION
         );
@@ -445,15 +459,20 @@ final class TMPENVO_Elementor_Ggowl_Extension
      */
     public function tmpenvo_admin_notice_minimum_php_version()
     {
-
-        if (isset($_GET['activate'])) {
-            unset($_GET['activate']);
+      $tmpenvo_admin_notice_missing_main_plugin_get = filter_input(
+          INPUT_GET,
+          'activate',
+          FILTER_CALLBACK,
+          ['options' => 'esc_html']
+      );
+        if ( isset( $tmpenvo_admin_notice_missing_main_plugin_get ) ) {
+            unset( $tmpenvo_admin_notice_missing_main_plugin_get );
         }
 
         $tmpenvo_message = sprintf(
             /* translators: 1: Plugin name 2: PHP 3: Required PHP version */
             esc_html__('"%1$s" requires "%2$s" version %3$s or greater.', 'tmpenvo'),
-            '<strong>' . esc_html__('Elementor Post Grid by Geeky Green Owl', 'tmpenvo') . '</strong>',
+            '<strong>' . esc_html__('Template Builder Elementor', 'tmpenvo') . '</strong>',
             '<strong>' . esc_html__('PHP', 'tmpenvo') . '</strong>',
             self::tmpenvo_MINIMUM_PHP_VERSION
         );
@@ -498,7 +517,7 @@ final class TMPENVO_Elementor_Ggowl_Extension
         \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\GgowlWidget_Video());
         \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\Ggowl_ACF_Widget_Image());
         \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\Ggowl_Elementor_metadata());
-        
+
         // WooCommerce  widgets - title
         require_once __DIR__ . '/widgets/woocommerce/tmpenvo-product-title.php';
         \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\Ggowl_Elementor_producttitle());
