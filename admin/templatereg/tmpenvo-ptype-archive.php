@@ -9,7 +9,7 @@ function tmpenvo_custom_template_post_archive()
     $labels = array(
         'name'                  => esc_html_x('Archive Templates', 'Post Type General Name', 'tmpenvo'),
         'singular_name'         => esc_html_x('Archive Template', 'Post Type Singular Name', 'tmpenvo'),
-        'menu_name'             => esc_html__('GGOwl Archive Templates', 'tmpenvo'),
+        'menu_name'             => esc_html__('TmpEnvo Archive Templates', 'tmpenvo'),
         'name_admin_bar'        => esc_html__('Post Type', 'tmpenvo'),
         'archives'              => esc_html__('Archive Template Archives', 'tmpenvo'),
         'attributes'            => esc_html__('Archive Template Attributes', 'tmpenvo'),

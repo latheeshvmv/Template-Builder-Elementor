@@ -40,7 +40,7 @@ class TMPENVO_Admin
     public function tmpenvo_add_plugin_admin_menu()
     {
         $tmpenvo_admin_icon_url = 'dashicons-welcome-widgets-menus';
-        add_menu_page($page_title = 'GGOwl Templates', $menu_title = 'Template Builder', $capability = 'manage_options', $menu_slug = 'tmpenvo_add_menu_page', array($this, $function = 'tmpenvo_add_menu_callback'), $icon_url = $tmpenvo_admin_icon_url, $position = 10);
+        add_menu_page($page_title = 'TmpEnvo Templates', $menu_title = 'Template Builder', $capability = 'manage_options', $menu_slug = 'tmpenvo_add_menu_page', array($this, $function = 'tmpenvo_add_menu_callback'), $icon_url = $tmpenvo_admin_icon_url, $position = 10);
         add_submenu_page($parent_slug = 'tmpenvo_add_menu_page', $page_title = 'Set Template', $menu_title = 'Set Template', $capability = 'manage_options', $menu_slug = 'tmpenvo_add_menu_page', array($this, $function = 'tmpenvo_main_menu_callback'));
         add_submenu_page($parent_slug = 'tmpenvo_add_menu_page', $page_title = 'Templates', $menu_title = 'Templates', $capability = 'manage_options', 'edit.php?post_type=tmpenvo_template');
         add_submenu_page($parent_slug = 'tmpenvo_add_menu_page', $page_title = 'Archive Templates', $menu_title = 'Archive Templates', $capability = 'manage_options', 'edit.php?post_type=tmpenvo_templ_arch');
@@ -803,7 +803,7 @@ class TMPENVO_Admin
     // Main options page
     public function tmpenvo_main_options_page()
     {
-        add_options_page($page_title = 'GGOwl Templates', $menu_title = 'GGOwl Templates', $capability = 'manage_options', 'tmpenvo-settings-admin', array($this, 'tmpenvo_main_menu_callback'));
+        add_options_page($page_title = 'TmpEnvo Templates', $menu_title = 'TmpEnvo Templates', $capability = 'manage_options', 'tmpenvo-settings-admin', array($this, 'tmpenvo_main_menu_callback'));
     }
 
 }

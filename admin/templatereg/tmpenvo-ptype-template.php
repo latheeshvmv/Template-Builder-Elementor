@@ -9,7 +9,7 @@ function tmpenvo_custom_template_post()
     $labels = array(
         'name'                  => esc_html_x('Templates', 'Post Type General Name', 'tmpenvo'),
         'singular_name'         => esc_html_x('Template', 'Post Type Singular Name', 'tmpenvo'),
-        'menu_name'             => esc_html__('GGOwl Templates', 'tmpenvo'),
+        'menu_name'             => esc_html__('TmpEnvo Templates', 'tmpenvo'),
         'name_admin_bar'        => esc_html__('Post Type', 'tmpenvo'),
         'archives'              => esc_html__('Template Archives', 'tmpenvo'),
         'attributes'            => esc_html__('Template Attributes', 'tmpenvo'),
