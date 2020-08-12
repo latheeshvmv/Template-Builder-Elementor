@@ -2,7 +2,7 @@
 if (!defined('ABSPATH')) {
     exit;
 }
-final class TMPENVO_Elementor_Ggowl_Extension
+final class TMPENVO_Elementor_TMPENVO_Extension
 {
 
     /**
@@ -157,7 +157,7 @@ final class TMPENVO_Elementor_Ggowl_Extension
           }
         }
 
-        $tmpenvo_data             = new \TMPENVOHELPERNS\GgowlHelper();
+        $tmpenvo_data             = new \TMPENVOHELPERNS\TMPENVOHelper();
         $tmpenvo_custom_post_list = $tmpenvo_data->tmpenvo_list_of_posttypes();
 
         $page->start_controls_section(
@@ -231,7 +231,7 @@ final class TMPENVO_Elementor_Ggowl_Extension
         if ($ggwol_enable_custombackground == 'yes') {
             require_once __DIR__ . '/class-tmpenvo-sectionbackground.php';
 
-            $tmpenvodat               = new \GEEKYGREENOWLSECBACKNS\GgowlSecBack();
+            $tmpenvodat               = new \GEEKYGREENOWLSECBACKNS\TMPENVOSecBack();
             $img_source             = $tmpenvodat->gen_image_url_normal($section);
             $img_source_position_lg = $section->get_settings('tmpenvo_back_section_img_position');
             $img_source_position_md = $section->get_settings('tmpenvo_back_section_img_position_tablet');
@@ -508,48 +508,48 @@ final class TMPENVO_Elementor_Ggowl_Extension
         require_once __DIR__ . '/widgets/core/tmpenvo-core-metadata.php';
 
         //core files class reg
-        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\Ggowl_Elementor_Title_Widget());
-        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\Ggowl_Elementor_Breadcrump_Widget());
-        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\Ggowl_Elementor_Comment_Widget());
-        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\Ggowl_Elementor_Dynamic_Content_Widget());
-        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\Ggowl_Elementor_Featured_image_Widget());
-        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\Ggowl_Elementor_CustomFields_Widget());
-        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\GgowlWidget_Video());
-        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\Ggowl_ACF_Widget_Image());
-        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\Ggowl_Elementor_metadata());
+        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\TMPENVO_Elementor_Title_Widget());
+        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\TMPENVO_Elementor_Breadcrump_Widget());
+        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\TMPENVO_Elementor_Comment_Widget());
+        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\TMPENVO_Elementor_Dynamic_Content_Widget());
+        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\TMPENVO_Elementor_Featured_image_Widget());
+        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\TMPENVO_Elementor_CustomFields_Widget());
+        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\TMPENVOWidget_Video());
+        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\TMPENVO_ACF_Widget_Image());
+        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\TMPENVO_Elementor_metadata());
 
         // WooCommerce  widgets - title
         require_once __DIR__ . '/widgets/woocommerce/tmpenvo-product-title.php';
-        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\Ggowl_Elementor_producttitle());
+        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\TMPENVO_Elementor_producttitle());
 
         // WooCommerce  widgets - add to cart
         require_once __DIR__ . '/widgets/woocommerce/tmpenvo-product-addtocart.php';
-        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\Ggowl_Elementor_addtocart());
+        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\TMPENVO_Elementor_addtocart());
 
         // WooCommerce  widgets - desciption
         require_once __DIR__ . '/widgets/woocommerce/tmpenvo-product-description.php';
-        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\Ggowl_Elementor_product_description());
+        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\TMPENVO_Elementor_product_description());
 
         require_once __DIR__ . '/widgets/woocommerce/tmpenvo-product-short-description.php';
-        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\Ggowl_Elementor_product_short_description());
+        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\TMPENVO_Elementor_product_short_description());
 
         require_once __DIR__ . '/widgets/woocommerce/tmpenvo-product-woofields.php';
-        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\Ggowl_Elementor_woo_fields());
+        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\TMPENVO_Elementor_woo_fields());
 
         require_once __DIR__ . '/widgets/woocommerce/tmpenvo-product-gallery-grid.php';
-        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\Ggowl_Elementor_product_gallerygrid());
+        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\TMPENVO_Elementor_product_gallerygrid());
 
         require_once __DIR__ . '/widgets/woocommerce/tmpenvo-product-reviewform.php';
-        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\Ggowl_Elementor_product_reviewform());
+        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\TMPENVO_Elementor_product_reviewform());
 
         require_once __DIR__ . '/widgets/woocommerce/tmpenvo-product-featuredimage.php';
-        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\Ggowl_Elementor_product_featuredimage());
+        \Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \Elementor\TMPENVO_Elementor_product_featuredimage());
 
     }
 
 }
 
-TMPENVO_Elementor_Ggowl_Extension::tmpenvo_instance();
+TMPENVO_Elementor_TMPENVO_Extension::tmpenvo_instance();
 
 function tmpenvo_add_elementor_widget_categories($tmpenvo_elements_manager)
 {

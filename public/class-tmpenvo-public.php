@@ -6,8 +6,8 @@
  * @link       https://envomart.com
  * @since      1.0.0
  *
- * @package    Ggowl
- * @subpackage Ggowl/public
+ * @package    TMPENVO
+ * @subpackage TMPENVO/public
  */
 
 /**
@@ -16,11 +16,11 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the public-facing stylesheet and JavaScript.
  *
- * @package    Ggowl
- * @subpackage Ggowl/public
+ * @package    TMPENVO
+ * @subpackage TMPENVO/public
  * @author     Latheesh V M Villa <owl@geekygreenowl.com>
  */
-class Ggowl_Public {
+class TMPENVO_Public {
 
 	/**
 	 * The ID of this plugin.
@@ -65,10 +65,10 @@ class Ggowl_Public {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Ggowl_Loader as all of the hooks are defined
+		 * defined in TMPENVO_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Ggowl_Loader will then create the relationship
+		 * The TMPENVO_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
@@ -88,10 +88,10 @@ class Ggowl_Public {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Ggowl_Loader as all of the hooks are defined
+		 * defined in TMPENVO_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Ggowl_Loader will then create the relationship
+		 * The TMPENVO_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */

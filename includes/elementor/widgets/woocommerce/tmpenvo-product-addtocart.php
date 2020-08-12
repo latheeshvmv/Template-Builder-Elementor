@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-class Ggowl_Elementor_addtocart extends \Elementor\Widget_Base
+class TMPENVO_Elementor_addtocart extends \Elementor\Widget_Base
 {
 
     public function get_name()
@@ -392,7 +392,7 @@ class Ggowl_Elementor_addtocart extends \Elementor\Widget_Base
             return;
         }
         $tmpenvo_button_text        = $settings['tmpenvo_addtocart_button_text'];
-        $tmpenvo_addtocart_instance = new \TMPENVOHELPERNS\GgowlHelper();
+        $tmpenvo_addtocart_instance = new \TMPENVOHELPERNS\TMPENVOHelper();
         global $post;
 
         echo '<div class="tmpenvo-widget-addtocart-cont" >';

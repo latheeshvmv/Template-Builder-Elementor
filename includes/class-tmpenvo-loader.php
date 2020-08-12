@@ -6,8 +6,8 @@
  * @link       https://envomart.com
  * @since      1.0.0
  *
- * @package    Ggowl
- * @subpackage Ggowl/includes
+ * @package    TMPENVO
+ * @subpackage TMPENVO/includes
  */
 
 /**
@@ -17,11 +17,11 @@
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
- * @package    Ggowl
- * @subpackage Ggowl/includes
+ * @package    TMPENVO
+ * @subpackage TMPENVO/includes
  * @author     Latheesh V M Villa <owl@geekygreenowl.com>
  */
-class Ggowl_Loader {
+class TMPENVO_Loader {
 
 	/**
 	 * The array of actions registered with WordPress.

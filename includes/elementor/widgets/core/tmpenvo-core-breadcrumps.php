@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-class Ggowl_Elementor_Breadcrump_Widget extends \Elementor\Widget_Base
+class TMPENVO_Elementor_Breadcrump_Widget extends \Elementor\Widget_Base
 {
 
     public function get_name()
@@ -190,7 +190,7 @@ class Ggowl_Elementor_Breadcrump_Widget extends \Elementor\Widget_Base
     {
 
         $settings   = $this->get_settings_for_display();
-        $tmpenvobread = new \TMPENVOHELPERNS\GgowlHelper();
+        $tmpenvobread = new \TMPENVOHELPERNS\TMPENVOHelper();
         $tmpenvo_sep  = '&nbsp;' . $settings['tmpenvo_breadcrump_breadcrump_seperator'] . '&nbsp;';
 
         echo '<div class="tmpenvo-widget-breadcrump">';

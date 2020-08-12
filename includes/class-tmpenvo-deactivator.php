@@ -6,8 +6,8 @@
  * @link       https://envomart.com
  * @since      1.0.0
  *
- * @package    Ggowl
- * @subpackage Ggowl/includes
+ * @package    TMPENVO
+ * @subpackage TMPENVO/includes
  */
 
 /**
@@ -16,11 +16,11 @@
  * This class defines all code necessary to run during the plugin's deactivation.
  *
  * @since      1.0.0
- * @package    Ggowl
- * @subpackage Ggowl/includes
+ * @package    TMPENVO
+ * @subpackage TMPENVO/includes
  * @author     Latheesh V M Villa <owl@geekygreenowl.com>
  */
-class Ggowl_Deactivator {
+class TMPENVO_Deactivator {
 
 	/**
 	 * Short Description. (use period)

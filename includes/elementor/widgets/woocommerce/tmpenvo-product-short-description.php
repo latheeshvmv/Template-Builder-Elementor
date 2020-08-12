@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-class Ggowl_Elementor_product_short_description extends \Elementor\Widget_Base
+class TMPENVO_Elementor_product_short_description extends \Elementor\Widget_Base
 {
 
     public function get_name()
@@ -444,7 +444,7 @@ class Ggowl_Elementor_product_short_description extends \Elementor\Widget_Base
             echo esc_html("WooCommerce  Not Active", 'tmpenvo');
             return;
         }
-        $tmpenvo_product_short_description_instance = new \TMPENVOHELPERNS\GgowlHelper();
+        $tmpenvo_product_short_description_instance = new \TMPENVOHELPERNS\TMPENVOHelper();
         $tmpenvo_allowed                            = $tmpenvo_product_short_description_instance->ggwol_allowed_html();
         global $post;
         if ($post->post_type == 'tmpenvo_template'):

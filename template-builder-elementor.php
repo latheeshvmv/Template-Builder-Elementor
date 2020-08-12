@@ -3,7 +3,7 @@
 /**
  * @link              https://envomart.com
  * @since             1.0.0
- * @package           Ggowl
+ * @package           TMPENVO
  *
  * @wordpress-plugin
  * Plugin Name:       Template Builder Elementor
@@ -38,7 +38,7 @@ define( 'TMPENVO_VERSION', '1.0.0' );
  */
 function tmpenvo_activate() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-tmpenvo-activator.php';
-	Ggowl_Activator::activate();
+	TMPENVO_Activator::activate();
 }
 
 /**
@@ -47,7 +47,7 @@ function tmpenvo_activate() {
  */
 function tmpenvo_deactivate() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-tmpenvo-deactivator.php';
-	Ggowl_Deactivator::deactivate();
+	TMPENVO_Deactivator::deactivate();
 }
 
 register_activation_hook( __FILE__, 'tmpenvo_activate' );
@@ -78,8 +78,8 @@ require plugin_dir_path( __FILE__ ) . 'includes/elementor/tmpenvo-elementor-widg
  * @since    1.0.0
  */
 function tmpenvo_run() {
-	$plugin_filers = new TMPENVOFILNS\GgowlFilters();
-	$plugin = new Ggowl();
+	$plugin_filers = new TMPENVOFILNS\TMPENVOFilters();
+	$plugin = new TMPENVO();
 	$plugin->run();
 }
 tmpenvo_run();

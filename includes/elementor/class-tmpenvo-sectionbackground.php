@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-class GgowlSecBack
+class TMPENVOSecBack
 {
 
     public function gen_image_url_normal($section)

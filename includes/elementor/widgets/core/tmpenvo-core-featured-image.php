@@ -5,7 +5,7 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 
-class Ggowl_Elementor_Featured_image_Widget extends Widget_Base
+class TMPENVO_Elementor_Featured_image_Widget extends Widget_Base
 {
 
     public function get_name()
@@ -542,7 +542,7 @@ class Ggowl_Elementor_Featured_image_Widget extends Widget_Base
     protected function render()
     {
         $settings = $this->get_settings_for_display();
-        $tmpenvo_core_featuredimage_instance = new \TMPENVOHELPERNS\GgowlHelper();
+        $tmpenvo_core_featuredimage_instance = new \TMPENVOHELPERNS\TMPENVOHelper();
         global $post;
         echo '<div class="tmpenvo-widget-core_featuredimage" >';
         echo '<div class="tmpenvo-widget-core_featuredimage-inner elementor-image" >';
@@ -581,10 +581,10 @@ class Ggowl_Elementor_Featured_image_Widget extends Widget_Base
 			 					<?php if ($link): ?>
 			 					<a <?php echo wp_kses($this->get_render_attribute_string('link'), $tmpenvo_core_featuredimage_instance->ggwol_allowed_html()); ?>>
 			 					<?php endif;
-            if (empty(Ggowl_Featurred_Image_Getter::get_attachment_image_html_generator($attachment_id, $settings))) {
+            if (empty(TMPENVO_Featurred_Image_Getter::get_attachment_image_html_generator($attachment_id, $settings))) {
                 echo Group_Control_Image_Size::get_attachment_image_html($settings);
             } else {
-                echo Ggowl_Featurred_Image_Getter::get_attachment_image_html_generator($attachment_id, $settings);
+                echo TMPENVO_Featurred_Image_Getter::get_attachment_image_html_generator($attachment_id, $settings);
             }
             if ($link): ?>
 		 					</a>
@@ -625,10 +625,10 @@ class Ggowl_Elementor_Featured_image_Widget extends Widget_Base
 			 				 <?php if ($link): ?>
 			 				 <a <?php echo wp_kses($this->get_render_attribute_string('link'), $tmpenvo_core_featuredimage_instance->ggwol_allowed_html()); ?>>
 			 				 <?php endif;
-        if (empty(Ggowl_Featurred_Image_Getter::get_attachment_image_html_generator($attachment_id, $settings))) {
+        if (empty(TMPENVO_Featurred_Image_Getter::get_attachment_image_html_generator($attachment_id, $settings))) {
             echo Group_Control_Image_Size::get_attachment_image_html($settings);
         } else {
-            echo Ggowl_Featurred_Image_Getter::get_attachment_image_html_generator($attachment_id, $settings);
+            echo TMPENVO_Featurred_Image_Getter::get_attachment_image_html_generator($attachment_id, $settings);
         }
         if ($link): ?>
 		 				 </a>

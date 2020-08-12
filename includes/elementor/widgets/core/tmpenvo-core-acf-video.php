@@ -3,7 +3,7 @@ namespace Elementor;
 if (!defined('ABSPATH')) {
 		exit;
 }
-class GgowlWidget_Video extends \Elementor\Widget_Base {
+class TMPENVOWidget_Video extends \Elementor\Widget_Base {
 
 
 	public function get_name() {
@@ -112,7 +112,7 @@ class GgowlWidget_Video extends \Elementor\Widget_Base {
 
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-		$tmpenvo_acf_video_instance =new \TMPENVOHELPERNS\GgowlHelper();
+		$tmpenvo_acf_video_instance =new \TMPENVOHELPERNS\TMPENVOHelper();
 		global $post;
 		if($post->post_type == 'tmpenvo_template'):
 				$post_id = get_the_ID();

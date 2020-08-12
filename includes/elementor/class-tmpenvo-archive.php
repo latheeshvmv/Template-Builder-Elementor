@@ -5,7 +5,7 @@ namespace TMPENVOARCHIVEBUILDERNS {
     exit;
   }
 
-  class Ggowlarchiver
+  class TMPENVOarchiver
   {
 
     protected $tmpenvo_version;
@@ -309,11 +309,11 @@ namespace TMPENVOARCHIVEBUILDERNS {
         if($adv_settings == 'old'){
           $imageurl = get_the_post_thumbnail_url($tmpenvo_img_id, $tmpenvo_img_type_size);
         }else{
-          $imageurl =  \Elementor\Ggowl_Featurred_Image_Getter::get_attachment_image_html_generator($imageurl_before, $adv_settings, $image_size_key = 'image', $image_key = null, $extra);
+          $imageurl =  \Elementor\TMPENVO_Featurred_Image_Getter::get_attachment_image_html_generator($imageurl_before, $adv_settings, $image_size_key = 'image', $image_key = null, $extra);
           if(empty($imageurl)){
             $imageurl_before = $adv_settings['image']['id'];
             if(!empty($imageurl_before)){
-              $imageurl =  \Elementor\Ggowl_Featurred_Image_Getter::get_attachment_image_html_generator($imageurl_before, $adv_settings, $image_size_key = 'image', $image_key = null, $extra);
+              $imageurl =  \Elementor\TMPENVO_Featurred_Image_Getter::get_attachment_image_html_generator($imageurl_before, $adv_settings, $image_size_key = 'image', $image_key = null, $extra);
             }
           }
         }
@@ -329,11 +329,11 @@ namespace TMPENVOARCHIVEBUILDERNS {
         if($adv_settings == 'old'){
           $imageurl = get_the_post_thumbnail_url($tmpenvo_img_id, $tmpenvo_img_type_size);
         }else{
-          $imageurl =  \Elementor\Ggowl_Featurred_Image_Getter::get_attachment_image_html_generator($imageurl_before, $adv_settings, $image_size_key = 'image', $image_key = null, $extra);
+          $imageurl =  \Elementor\TMPENVO_Featurred_Image_Getter::get_attachment_image_html_generator($imageurl_before, $adv_settings, $image_size_key = 'image', $image_key = null, $extra);
           if(empty($imageurl)){
             $imageurl_before = $adv_settings['image']['id'];
             if(!empty($imageurl_before)){
-              $imageurl =  \Elementor\Ggowl_Featurred_Image_Getter::get_attachment_image_html_generator($imageurl_before, $adv_settings, $image_size_key = 'image', $image_key = null, $extra);
+              $imageurl =  \Elementor\TMPENVO_Featurred_Image_Getter::get_attachment_image_html_generator($imageurl_before, $adv_settings, $image_size_key = 'image', $image_key = null, $extra);
             }
           }
         }

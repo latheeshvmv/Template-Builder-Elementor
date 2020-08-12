@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-class Ggowl_Elementor_CustomFields_Widget extends \Elementor\Widget_Base
+class TMPENVO_Elementor_CustomFields_Widget extends \Elementor\Widget_Base
 {
 
     public function get_name()
@@ -203,7 +203,7 @@ class Ggowl_Elementor_CustomFields_Widget extends \Elementor\Widget_Base
         global $post;
         $settings                = $this->get_settings_for_display();
         $settings                = $this->get_settings_for_display();
-        $tmpenvo_acffield_instance = new \TMPENVOHELPERNS\GgowlHelper();
+        $tmpenvo_acffield_instance = new \TMPENVOHELPERNS\TMPENVOHelper();
 
         if ($post->post_type == 'tmpenvo_template'):
             $post_id         = get_the_ID();

@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-class Ggowl_Elementor_Comment_Widget extends \Elementor\Widget_Base
+class TMPENVO_Elementor_Comment_Widget extends \Elementor\Widget_Base
 {
 
     public function get_name()
@@ -452,7 +452,7 @@ class Ggowl_Elementor_Comment_Widget extends \Elementor\Widget_Base
     protected function render()
     {
         $settings               = $this->get_settings_for_display();
-        $tmpenvo_comment_instance = new \TMPENVOHELPERNS\GgowlHelper();
+        $tmpenvo_comment_instance = new \TMPENVOHELPERNS\TMPENVOHelper();
         global $post;
 
         if ($post->post_type == 'tmpenvo_template'):

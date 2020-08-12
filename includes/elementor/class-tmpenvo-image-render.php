@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-class Ggowl_Featurred_Image_Getter extends Group_Control_Image_Size
+class TMPENVO_Featurred_Image_Getter extends Group_Control_Image_Size
 {
 
     /**

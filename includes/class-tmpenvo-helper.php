@@ -5,7 +5,7 @@ namespace TMPENVOHELPERNS {
         exit;
     }
 
-    class GgowlHelper
+    class TMPENVOHelper
     {
         public function tmpenvo_post_featuredimage_gen($tmpenvo_id){
           $attachemnt_id = get_post_thumbnail_id($tmpenvo_id);
@@ -388,13 +388,13 @@ namespace TMPENVOHELPERNS {
                         } else {
                             $attachment_id = $imagedata;
                             echo '<div class="elementor-image grid tmpenvo-image-customfield">';
-                            echo \Elementor\Ggowl_Featurred_Image_Getter::get_attachment_image_html_generator($attachment_id, $settings, $image_key = 'tmpenvo_img_dyn_image');
+                            echo \Elementor\TMPENVO_Featurred_Image_Getter::get_attachment_image_html_generator($attachment_id, $settings, $image_key = 'tmpenvo_img_dyn_image');
                             echo '</div>';
                         }
                     } else {
                         $attachment_id = $settings['tmpenvo_img_dyn_image']['id'];
                         echo '<div class="elementor-image grid tmpenvo-image-customfield">';
-                        echo \Elementor\Ggowl_Featurred_Image_Getter::get_attachment_image_html_generator($attachment_id, $settings, $image_key = 'tmpenvo_img_dyn_image');
+                        echo \Elementor\TMPENVO_Featurred_Image_Getter::get_attachment_image_html_generator($attachment_id, $settings, $image_key = 'tmpenvo_img_dyn_image');
                         echo '</div>';
                     }
                     break;

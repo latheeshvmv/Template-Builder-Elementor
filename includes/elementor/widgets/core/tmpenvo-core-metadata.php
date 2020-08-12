@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-class Ggowl_Elementor_metadata extends \Elementor\Widget_Base
+class TMPENVO_Elementor_metadata extends \Elementor\Widget_Base
 {
 
     public function get_name()
@@ -58,7 +58,7 @@ class Ggowl_Elementor_metadata extends \Elementor\Widget_Base
             ]
         );
 
-        $tmpenvo_metadata_instance_tax = new \TMPENVOHELPERNS\GgowlHelper();
+        $tmpenvo_metadata_instance_tax = new \TMPENVOHELPERNS\TMPENVOHelper();
         $tmpenvo_txon_array            = $tmpenvo_metadata_instance_tax->tmpenvo_meta_data_retrievier_taxonomy();
 
         $this->add_control(
@@ -582,7 +582,7 @@ class Ggowl_Elementor_metadata extends \Elementor\Widget_Base
     {
 
         $settings                = $this->get_settings_for_display();
-        $tmpenvo_metadata_instance = new \TMPENVOHELPERNS\GgowlHelper();
+        $tmpenvo_metadata_instance = new \TMPENVOHELPERNS\TMPENVOHelper();
         global $post;
         if ($post->post_type == 'tmpenvo_template'):
             $post_id         = get_the_ID();

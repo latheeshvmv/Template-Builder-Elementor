@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-class Ggowl_Elementor_woo_fields extends \Elementor\Widget_Base
+class TMPENVO_Elementor_woo_fields extends \Elementor\Widget_Base
 {
 
     public function get_name()
@@ -569,7 +569,7 @@ class Ggowl_Elementor_woo_fields extends \Elementor\Widget_Base
             echo esc_html("WooCommerce  Not Active", 'tmpenvo');
             return;
         }
-        $tmpenvo_woo_fields_instance = new \TMPENVOHELPERNS\GgowlHelper();
+        $tmpenvo_woo_fields_instance = new \TMPENVOHELPERNS\TMPENVOHelper();
         $field_type                = $settings['tmpenvo_woo_fields_control_type'];
         $aligninstraight           = $settings['tmpenvo_woo_fields_color_content_alighstraight'];
         $allowed_html              = $tmpenvo_woo_fields_instance->ggwol_allowed_html();

@@ -5,7 +5,7 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 
-class Ggowl_Elementor_product_gallerygrid extends Widget_Base
+class TMPENVO_Elementor_product_gallerygrid extends Widget_Base
 {
 
     public function get_name()
@@ -310,7 +310,7 @@ class Ggowl_Elementor_product_gallerygrid extends Widget_Base
             echo esc_html__("WooCommerce  Not Active", 'tmpenvo');
             return;
         }
-        $tmpenvo_product_gallerycarousel_instance = new \TMPENVOHELPERNS\GgowlHelper();
+        $tmpenvo_product_gallerycarousel_instance = new \TMPENVOHELPERNS\TMPENVOHelper();
         global $post;
 
         if ($post->post_type == 'tmpenvo_template'):

@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-class Ggowl_Elementor_Title_Widget extends \Elementor\Widget_Base
+class TMPENVO_Elementor_Title_Widget extends \Elementor\Widget_Base
 {
 
     public function get_name()
@@ -468,7 +468,7 @@ class Ggowl_Elementor_Title_Widget extends \Elementor\Widget_Base
     protected function render()
     {
         $settings             = $this->get_settings_for_display();
-        $tmpenvo_title_instance = new \TMPENVOHELPERNS\GgowlHelper();
+        $tmpenvo_title_instance = new \TMPENVOHELPERNS\TMPENVOHelper();
         $tmpenvo_selector       = $settings['tmpenvo_text_header_size'];
         global $post;
         if ($post->post_type == 'tmpenvo_template'):

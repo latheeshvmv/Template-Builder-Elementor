@@ -5,7 +5,7 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 
-class Ggowl_Elementor_product_featuredimage extends Widget_Base
+class TMPENVO_Elementor_product_featuredimage extends Widget_Base
 {
 
     public function get_title()
@@ -547,7 +547,7 @@ class Ggowl_Elementor_product_featuredimage extends Widget_Base
             return;
         }
 
-        $tmpenvo_product_featuredimage_instance = new \TMPENVOHELPERNS\GgowlHelper();
+        $tmpenvo_product_featuredimage_instance = new \TMPENVOHELPERNS\TMPENVOHelper();
         global $post;
         echo '<div class="tmpenvo-widget-product_featuredimage" >';
         echo '<div class="tmpenvo-widget-product_featuredimage-inner elementor-image" >';
@@ -586,7 +586,7 @@ class Ggowl_Elementor_product_featuredimage extends Widget_Base
 		 					<?php if ($link): ?>
 		 					<a <?php echo wp_kses($this->get_render_attribute_string('link'), $tmpenvo_product_featuredimage_instance->ggwol_allowed_html()); ?>>
 		 					<?php endif;
-            echo Ggowl_Featurred_Image_Getter::get_attachment_image_html_generator($attachment_id, $settings);
+            echo TMPENVO_Featurred_Image_Getter::get_attachment_image_html_generator($attachment_id, $settings);
             if ($link): ?>
 	 					</a>
 	 					<?php endif;?>
@@ -625,7 +625,7 @@ class Ggowl_Elementor_product_featuredimage extends Widget_Base
 		 				 <?php if ($link): ?>
 		 				 <a <?php echo wp_kses($this->get_render_attribute_string('link'), $tmpenvo_product_featuredimage_instance->ggwol_allowed_html()); ?>>
 		 				 <?php endif;
-        echo Ggowl_Featurred_Image_Getter::get_attachment_image_html_generator($attachment_id, $settings);
+        echo TMPENVO_Featurred_Image_Getter::get_attachment_image_html_generator($attachment_id, $settings);
         if ($link): ?>
 	 				 </a>
 	 				 <?php endif;?>

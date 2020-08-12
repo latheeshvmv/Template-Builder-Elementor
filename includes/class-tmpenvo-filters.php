@@ -4,7 +4,7 @@ namespace TMPENVOFILNS {
         exit;
     }
 
-    class GgowlFilters
+    class TMPENVOFilters
     {
         public function __construct()
         {

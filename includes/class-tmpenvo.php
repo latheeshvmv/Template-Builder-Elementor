@@ -9,8 +9,8 @@
  * @link       https://envomart.com
  * @since      1.0.0
  *
- * @package    Ggowl
- * @subpackage Ggowl/includes
+ * @package    TMPENVO
+ * @subpackage TMPENVO/includes
  */
 
 /**
@@ -23,11 +23,11 @@
  * version of the plugin.
  *
  * @since      1.0.0
- * @package    Ggowl
- * @subpackage Ggowl/includes
+ * @package    TMPENVO
+ * @subpackage TMPENVO/includes
  * @author     Latheesh V M Villa <owl@geekygreenowl.com>
  */
-class Ggowl {
+class TMPENVO {
 
 	/**
 	 * The loader that's responsible for maintaining and registering all hooks that power
@@ -35,7 +35,7 @@ class Ggowl {
 	 *
 	 * @since    1.0.0
 	 * @access   protected
-	 * @var      Ggowl_Loader    $loader    Maintains and registers all hooks for the plugin.
+	 * @var      TMPENVO_Loader    $loader    Maintains and registers all hooks for the plugin.
 	 */
 	protected $loader;
 
@@ -85,10 +85,10 @@ class Ggowl {
 	 *
 	 * Include the following files that make up the plugin:
 	 *
-	 * - Ggowl_Loader. Orchestrates the hooks of the plugin.
-	 * - Ggowl_i18n. Defines internationalization functionality.
-	 * - Ggowl_Admin. Defines all hooks for the admin area.
-	 * - Ggowl_Public. Defines all hooks for the public side of the site.
+	 * - TMPENVO_Loader. Orchestrates the hooks of the plugin.
+	 * - TMPENVO_i18n. Defines internationalization functionality.
+	 * - TMPENVO_Admin. Defines all hooks for the admin area.
+	 * - TMPENVO_Public. Defines all hooks for the public side of the site.
 	 *
 	 * Create an instance of the loader which will be used to register the hooks
 	 * with WordPress.
@@ -115,7 +115,7 @@ class Ggowl {
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-tmpenvo-public.php';
 
-		$this->loader = new Ggowl_Loader();
+		$this->loader = new TMPENVO_Loader();
 
 	}
 
@@ -129,7 +129,7 @@ class Ggowl {
 	 */
 	private function define_admin_hooks() {
 
-		$plugin_admin = new Ggowl_Admin( $this->get_plugin_name(), $this->get_version() );
+		$plugin_admin = new TMPENVO_Admin( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
@@ -145,7 +145,7 @@ class Ggowl {
 	 */
 	private function define_public_hooks() {
 
-		$plugin_public = new Ggowl_Public( $this->get_plugin_name(), $this->get_version() );
+		$plugin_public = new TMPENVO_Public( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
@@ -176,7 +176,7 @@ class Ggowl {
 	 * The reference to the class that orchestrates the hooks with the plugin.
 	 *
 	 * @since     1.0.0
-	 * @return    Ggowl_Loader    Orchestrates the hooks of the plugin.
+	 * @return    TMPENVO_Loader    Orchestrates the hooks of the plugin.
 	 */
 	public function get_loader() {
 		return $this->loader;

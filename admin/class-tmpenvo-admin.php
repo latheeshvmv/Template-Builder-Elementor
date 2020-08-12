@@ -2,7 +2,7 @@
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
-class Ggowl_Admin
+class TMPENVO_Admin
 {
     private $plugin_name;
 

@@ -4,7 +4,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-class Ggowl_Elementor_Dynamic_Content_Widget extends \Elementor\Widget_Base
+class TMPENVO_Elementor_Dynamic_Content_Widget extends \Elementor\Widget_Base
 {
 
     public function get_name()
@@ -468,7 +468,7 @@ class Ggowl_Elementor_Dynamic_Content_Widget extends \Elementor\Widget_Base
     protected function render()
     {
         $settings               = $this->get_settings_for_display();
-        $tmpenvo_content_instance = new \TMPENVOHELPERNS\GgowlHelper();
+        $tmpenvo_content_instance = new \TMPENVOHELPERNS\TMPENVOHelper();
         $tmpenvo_trim_enabled     = $settings['tmpenvo_trim_content_enabler'];
         $tmpenvo_trim_count       = $settings['tmpenvo_trim_content'];
         global $post;
