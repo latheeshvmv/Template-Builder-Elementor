@@ -87,14 +87,14 @@ function tmpenvo_add_elementor_archive($atts)
     return $response;
 }
 
-function tmpenvo__archive_template_default_comments_on($data)
+function tmpenvo_archive_template_default_comments_on($data)
 {
     if ($data['post_type'] == 'tmpenvo_templ_arch') {
         $data['comment_status'] = 1;
     }
     return $data;
 }
-add_filter('wp_insert_post_data', 'tmpenvo__archive_template_default_comments_on');
+add_filter('wp_insert_post_data', 'tmpenvo_archive_template_default_comments_on');
 
 add_filter('archive_template', 'tmpenvo_templ_archive_post_function', -20, 1);
 function tmpenvo_templ_archive_post_function($single)
